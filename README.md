@@ -309,3 +309,26 @@ tail sequence.fasta
 # Print only the last 3 lines of the file
 tail -n 3 sequence.fasta
 ```
+
+:clipboard: Let’s create a project folder structure
+
+You can create the following folder structure for your project:
+Make the folder structure like this 
+
+```
+DMSC_October
+    ├── Mapped_varcall
+    │   ├── WGS
+    │   └── target
+    ├── QC
+    │   ├── WGS
+    │   └── target
+    ├── TB_Profiler
+    │   ├── WGS
+    │   └── target
+    ├── data
+    │   ├── WGS
+    │   └── target
+    └── tblg
+        └── WGS
+```
