@@ -60,7 +60,7 @@ This entire structure represents the Linux file system tree.
 ├── var
 └── writable
 ```
-### **pwd** (Print Working Directory) 
+### `pwd` (Print Working Directory) 
 When we first log in to our system, our current working directory is automatically set to our home directory.
 The folder we are currently “standing in” is called the current working directory.
 
@@ -71,7 +71,7 @@ $ pwd
 ```
 Think of it as asking, ***“Where am I?”***
 
-### **ls** (List the files and directories)
+### `ls` (List the files and directories)
 To list the files and directories in your current working directory, type:
 ```bash
 ls
@@ -83,15 +83,14 @@ You can also specify a particular folder to list its contents. For example:
 ls Documents
 ```
 
-
-Common **ls** options
+Common `ls` options
 | Command | Description | Example |
 |----------|--------------|----------|
 | `ls -l` | List directory contents in long format (shows details such as permissions, owner, size, and date). | `ls -l`, `ls -l Downloads/` |
 | `ls -a` | List all files, including hidden ones (those starting with a dot `.`). | `ls -a`, `ls -a Documents/` |
 | `ls -la` | List all files in long format, including hidden ones. | `ls -la`, `ls -la Desktop/` |
 
-### **cd** (Change Directory)
+### `cd` (Change Directory)
 To change our working directory, or to move to a different location in the filesystem, we use the **cd** command.
 You type cd followed by the path name of the directory you want to move into.
 
@@ -144,7 +143,7 @@ $ cd ..
 $ pwd
 /mnt/c/Users/username/
 ```
-**cd** shortcuts
+`cd` shortcuts
 | Command | Description | Example |
 |---------|-------------|---------|
 | `cd` | Change directory. Move into a specified directory. | `cd Documents` |
@@ -155,6 +154,20 @@ $ pwd
 | `cd ~user_name` | Change the working directory to the home directory of `user_name`. |  |
 
 ## File Manipulation
+
+### `mkdir` (Create Directories)
+```bash
+mkdir dir1
+mkdir dir1 dir2 dir3
+```
+This creates a new folder called `dir1` in your current working directory. You can also create multiple folders at once by listing their names: `dir1` `dir2` `dir3`
+
+### `touch` (Create a File)
+```bash
+touch item1.txt
+touch item1.txt item2.txt item3.txt
+```
+The first line creates a new file called `item1.txt` in the current directory. You can also create multiple files at once by listing their names: `item1.txt` `item2.txt` `item3.txt`
 
 >[!TIP]
 >Using Wildcards
@@ -169,36 +182,21 @@ They are very useful when you want to work with multiple files at once without t
 | `[!characters]` or `[^characters]` | Matches any character that is **not** a member of the set `characters` |
 
 
-### **mkdir** (Create Directories)
-```bash
-mkdir dir1
-mkdir dir1 dir2 dir3
-```
-This creates a new folder called `dir1` in your current working directory. You can also create multiple folders at once by listing their names: `dir1` `dir2` `dir3`
-
-### **touch** (Create a File)
-```bash
-touch item1.txt
-touch item1.txt item2.txt item3.txt
-```
-The fisrt line creates a new file called `item1.txt` in the current directory. You can also create multiple files at once by listing their names: `item1.txt` `item2.txt` `item3.txt`
-
 :tea: Let’s do a exercise!
 
 Create a folder called cafe_menu in your current directory.
 Inside cafe_menu, create three subfolders named:
-
-dessert
-drink
-food
+- dessert
+- drink
+- food
 Hint: You can create all three subfolders at once using a single command
 
 Create files inside cafe_menu folder:
 salad.txt coffee.txt cake.txt burger.txt
 
-### **cp** (Copy Files and Directories)
+### `cp` (Copy Files and Directories)
 
-We use **`cp`** to copy files and directories.
+We use `cp` to copy files and directories.
 
 ---
 
@@ -209,47 +207,36 @@ For example, to copy `cake.txt` in the same folder:
 cp cake.txt cake_copy.txt
 ```
 2. Copying a File to Another Folder
-To copy a file into another folder, for example coffee.txt into the drink/ folder:
+To copy a file into another folder, for example `coffee.txt` into the `drink/` folder:
 
 ```bash
 cp coffee.txt drink/
 ```
 3. Copying an Entire Folder
-To copy a whole folder, use the -r (recursive) option.
-For example, to copy the drink folder into the food folder:
+To copy a whole folder, use the `-r` (recursive) option.
+For example, to copy the `drink` folder into the `food` folder:
 ```bash
 cp -r drink/ food/
 ```
-### **mv** (Move and Rename Files)
-1. renaming file 
-mv cake_copy.txt tart.txt
-2. moving files to another folder
-mv cake.txt tart.txt dessert/
-mv burger.txt salad.txt food
-3. moving entire folder
-mv dessert/ food/ 
-move it bake to current directory 
-mv food/dessert/ .
-Note . dot means current direcotry
 
-### **mv** (Move and Rename Files)
-
-The **`mv`** command is used to **move files/folders** or **rename them**.
+### `mv` (Move and Rename Files)
+---
+The `mv` command is used to **move files/folders** or **rename them**.
 
 1. Renaming a File
 To rename a file, use `mv` followed by the old name and the new name:
 ```bash
 mv cake_copy.txt tart.txt
 ```
-This renames cake_copy.txt to tart.txt.
+This renames `cake_copy.txt` to `tart.txt.`
 
 2. Moving Files to Another Folder
 ```bash
 mv cake.txt tart.txt dessert/
 mv burger.txt salad.txt food/
 ```
-The first command moves cake.txt and tart.txt into the dessert folder.
-The second command moves burger.txt and salad.txt into the food folder.
+The first command moves `cake.txt` and `tart.txt` into the `dessert` folder.
+The second command moves `burger.txt` and `salad.txt` into the `food` folder.
 
 3.Moving an Entire Folder
 To move a folder (and all its contents) to another location:
@@ -257,16 +244,16 @@ To move a folder (and all its contents) to another location:
 ```bash
 mv dessert/ food/
 ```
-This moves the dessert folder into the food folder.
-To move a folder back to the current directory, use a dot .:
+This moves the `dessert` folder into the `food` folder.
+To move a folder back to the current directory, use a dot `.`:
 ```bash
 mv food/dessert/ .
 ```
 Here, the `.` (dot) refers to the current working directory.
 
-### **rm** – Remove Files and Directories
-
-The **`rm`** command is used to **delete files and directories**.  
+### `rm` (Remove Files and Directories)
+---
+The `rm` command is used to **delete files and directories**.  
 
 1. Removing a File
 To delete a single file:
@@ -277,7 +264,7 @@ rm coffee.txt
 This removes the file coffee.txt from the current directory.
 
 2. Removing a Folder
-To delete a folder and all its contents, use the -r (recursive) option:
+To delete a folder and all its contents, use the `-r` (recursive) option:
 ```bash
 rm -r food/drink/
 ```
@@ -286,29 +273,39 @@ This deletes the folder drink (inside food folder) and everything inside it.
 >[!CAUTION]
 >Be careful: deleted files are **not moved to the Trash** — they >are removed permanently.
 
-:notebook: **Practice**
-Folder: bookshelf
-Subfolder: fiction
-Files in subfolder: novel.txt, story.txt
-
-Subfolder: nonfiction
-Files in subfolder: biography.txt, history.txt
-
-Subfolder: magazines
-Files in subfolder: fashion.txt, tech.txt
-
-### **cat** (Concatenate Files)
+### `cat` (Concatenate Files)
 We can use it to display files without paging.
 ```bash
 cat sequece.fasta
 ```
-### **less** 
+### `less`
 The less command allows you to view large files one screen at a time, making it easier to read long files.
 ```bash
 less sequece.fasta
 ```
-Use the Up and Down arrow keys (↑ ↓) to scroll line by line.
-Press the Spacebar to move down one page.
-Press b to move back one page.
-Press q to quit and return to the command line.
+- Use the Up and Down arrow keys (↑ ↓) to scroll line by line.
+- Press the Spacebar to move down one page.
+- Press b to move back one page.
+- Press q to quit and return to the command line.
 
+### `head` and `tail`
+
+The `head` and `tail` commands let you view specific parts of a file:
+
+- `head` prints the **first** few lines of a file.
+- `tail` prints the **last** few lines of a file.  
+
+```bash
+# By default, this prints the first 10 lines of the file
+$ head sequence.fasta
+
+# Print only the first 5 lines of the file
+$ head -n 5 sequence.fasta
+
+
+# By default, this prints the last 10 lines of the file
+$ tail sequence.fasta
+
+# Print only the last 3 lines of the file
+$ tail -n 3 sequence.fasta
+```
