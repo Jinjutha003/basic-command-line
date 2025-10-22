@@ -192,6 +192,7 @@ Inside cafe_menu, create three subfolders named:
 - dessert
 - drink
 - food
+
 Hint: You can create all three subfolders at once using a single command
 
 Create files inside cafe_menu folder:
