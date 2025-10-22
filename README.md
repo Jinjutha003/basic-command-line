@@ -317,18 +317,21 @@ Make the folder structure like this
 
 ```
 DMSC_October
-    ├── Mapped_varcall
-    │   ├── WGS
-    │   └── target
-    ├── QC
-    │   ├── WGS
-    │   └── target
-    ├── TB_Profiler
-    │   ├── WGS
-    │   └── target
-    ├── data
-    │   ├── WGS
-    │   └── target
-    └── tblg
-        └── WGS
+├── QC
+│   ├── WGS
+│   └── target
+├── TB_Profiler
+│   ├── WGS
+│   └── target
+├── data
+│   ├── WGS
+│   ├── reference
+│   └── target
+├── mapped_varcall
+│   ├── WGS
+│   └── target
+├── mtbtyper
+│   └── WGS
+└── tblg
+    └── WGS
 ```
