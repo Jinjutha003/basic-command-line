@@ -286,3 +286,32 @@ This deletes the folder drink (inside food folder) and everything inside it.
 >[!CAUTION]
 >Be careful: deleted files are **not moved to the Trash** — they >are removed permanently.
 
+:notebook: **Practice**
+Folder: bookshelf
+Subfolder: fiction
+    novel.txt
+    story.txt
+
+Subfolder: nonfiction
+    biography.txt
+    history.txt
+
+Subfolder: magazines
+    fashion.txt
+    tech.txt
+
+### **cat** (Concatenate Files)
+We can use it to display files without paging.
+```bash
+cat sequece.fasta
+```
+### **less** 
+The less command allows you to view large files one screen at a time, making it easier to read long files.
+```bash
+less sequece.fasta
+```
+Use the Up and Down arrow keys (↑ ↓) to scroll line by line.
+Press the Spacebar to move down one page.
+Press b to move back one page.
+Press q to quit and return to the command line.
+
