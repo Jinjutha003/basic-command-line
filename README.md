@@ -60,3 +60,53 @@ This entire structure represents the Linux file system tree.
 ├── var
 └── writable
 ```
+### **pwd** (Print Working Directory) 
+When we first log in to our system, our current working directory is automatically set to our home directory.
+The folder we are currently “standing in” is called the current working directory.
+
+To display the current working directory, use:
+
+```bash
+$ pwd
+```
+Think of it as asking, ***“Where am I?”***
+
+### **ls** (List the files and directories)
+To list the files and directories in your current working directory, type:
+```bash
+ls
+```
+That’s like asking, ***“What’s here?”***
+
+You can also specify a particular folder to list its contents. For example:
+```bash
+ls Documents
+```
+
+
+Common **ls** options
+| Command | Description | Example |
+|----------|--------------|----------|
+| `ls -l` | List directory contents in long format (shows details such as permissions, owner, size, and date). | `ls -l`, `ls -l Downloads/` |
+| `ls -a` | List all files, including hidden ones (those starting with a dot `.`). | `ls -a`, `ls -a Documents/` |
+| `ls -la` | List all files in long format, including hidden ones. | `ls -la`, `ls -la Desktop/` |
+
+### **cd** (Change Directory)
+To change our working directory, or to move to a different location in the filesystem, we use the **cd** command.
+You type cd followed by the path name of the directory you want to move into.
+
+For example, let’s say we want to go into the Documents folder that we saw earlier when we listed files using ls.
+We can type:
+```bash
+$ cd Documents/
+$ pwd
+/home/username/Documents
+$ ls
+...Listing of many, many files...
+```
+>[!NOTE]
+> The dollar sign **`$`** is called the **shell prompt**.  
+> It appears whenever the shell is ready to accept a new command or input.
+
+>[!TIP]
+>If the folder name is long, you can type the first few letters and press Tab — the terminal will auto-complete the rest of the name if it exists in that path.
