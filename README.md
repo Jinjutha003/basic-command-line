@@ -67,7 +67,7 @@ The folder we are currently “standing in” is called the current working dire
 To display the current working directory, use:
 
 ```bash
-$ pwd
+pwd
 ```
 Think of it as asking, ***“Where am I?”***
 
