@@ -161,6 +161,14 @@ $ pwd
 >Wildcards allow us to quickly specify groups of filenames based on patterns of characters.
 They are very useful when you want to work with multiple files at once without typing each name individually
 
+| Wildcard | Meaning |
+|----------|---------|
+| `*` | Matches any characters |
+| `?` | Matches any single character |
+| `[characters]` | Matches any character that is a member of the set `characters` |
+| `[!characters]` or `[^characters]` | Matches any character that is **not** a member of the set `characters` |
+
+
 ### **mkdir** (Create Directories)
 ```bash
 mkdir dir1
