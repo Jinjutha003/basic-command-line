@@ -289,16 +289,13 @@ This deletes the folder drink (inside food folder) and everything inside it.
 :notebook: **Practice**
 Folder: bookshelf
 Subfolder: fiction
-    novel.txt
-    story.txt
+Files in subfolder: novel.txt, story.txt
 
 Subfolder: nonfiction
-    biography.txt
-    history.txt
+Files in subfolder: biography.txt, history.txt
 
 Subfolder: magazines
-    fashion.txt
-    tech.txt
+Files in subfolder: fashion.txt, tech.txt
 
 ### **cat** (Concatenate Files)
 We can use it to display files without paging.
