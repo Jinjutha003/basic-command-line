@@ -112,7 +112,7 @@ $ ls
 
 #### Absolute vs. Relative Paths
 We use the cd command followed by the path name of the folder we want to go to.
-A path name is like the route you take through the folder structure to reach a specific folder.
+A path is the route to a specific folder.
 
 There are two ways to write a path name:
 
