@@ -122,6 +122,9 @@ $ cd /mnt/c/Users/username/
 $ pwd
 /mnt/c/Users/username/
 ```
+> [!NOTE]  
+> Replace the path to match your own user directory.
+
 A **relative path** specifies the path starting from where you currently are.
 
 For example, if we want to go to a subdirectory called Documents inside the username folder:
