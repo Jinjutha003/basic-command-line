@@ -83,7 +83,7 @@ You can also specify a particular folder to list its contents. For example:
 ls Documents
 ```
 
-Common `ls` options
+:pushpin: Common `ls` options
 | Command | Description | Example |
 |----------|--------------|----------|
 | `ls -l` | List directory contents in long format (shows details such as permissions, owner, size, and date). | `ls -l`, `ls -l Downloads/` |
@@ -143,7 +143,7 @@ $ cd ..
 $ pwd
 /mnt/c/Users/username/
 ```
-`cd` shortcuts
+:pushpin: `cd` shortcuts
 | Command | Description | Example |
 |---------|-------------|---------|
 | `cd` | Change directory. Move into a specified directory. | `cd Documents` |
@@ -297,15 +297,15 @@ The `head` and `tail` commands let you view specific parts of a file:
 
 ```bash
 # By default, this prints the first 10 lines of the file
-$ head sequence.fasta
+head sequence.fasta
 
 # Print only the first 5 lines of the file
-$ head -n 5 sequence.fasta
+head -n 5 sequence.fasta
 
 
 # By default, this prints the last 10 lines of the file
-$ tail sequence.fasta
+tail sequence.fasta
 
 # Print only the last 3 lines of the file
-$ tail -n 3 sequence.fasta
+tail -n 3 sequence.fasta
 ```
